@@ -193,7 +193,7 @@ npm run tokens
 
 ## Background
 
-This script was built while integrating Design MD into a live design system at [gallegosdesigns.com](https://gallegosdesigns.com). The implementation process — including this gap, the decision to hold on oklch adoption, and the first-run lint results — is documented on the [design system page](https://gallegosdesigns.com/design-system).
+This script was built while integrating Design MD into a live design system at [vibe.chrisgallegos.com](https://vibe.chrisgallegos.com). The implementation process — including this gap, the decision to hold on oklch adoption, and the first-run lint results — is documented on the [design system page](https://vibe.chrisgallegos.com/design-system).
 
 ---
 
