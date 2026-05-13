@@ -1,4 +1,4 @@
-# css-to-design-md
+# design-md-sync
 
 Convert a CSS custom properties file into a [DESIGN.md](https://github.com/google-labs-code/design.md) file — compatible with Google's open-source design system linter and spec.
 
@@ -32,7 +32,7 @@ This script fills that gap.
 No install needed — it's a single Node.js script with zero dependencies.
 
 ```bash
-curl -O https://raw.githubusercontent.com/chrisgallegos/css-to-design-md/main/css-to-design-md.cjs
+curl -O https://raw.githubusercontent.com/chrisgallegos/design-md-sync/main/design-md-sync.cjs
 # or just download the file
 ```
 
@@ -41,7 +41,7 @@ curl -O https://raw.githubusercontent.com/chrisgallegos/css-to-design-md/main/cs
 ## Usage
 
 ```bash
-node css-to-design-md.cjs [options]
+node design-md-sync.cjs [options]
 ```
 
 ### Options
@@ -60,7 +60,7 @@ node css-to-design-md.cjs [options]
 ### Basic example
 
 ```bash
-node css-to-design-md.cjs \
+node design-md-sync.cjs \
   --input src/styles/theme.css \
   --name "Acme Design System" \
   --desc "Brand token system — light/dark, semantic color model."
@@ -168,7 +168,7 @@ Add to your `package.json`:
 ```json
 "scripts": {
   "tokens:extract": "node scripts/extract-tokens.cjs",
-  "tokens:lint": "node scripts/css-to-design-md.cjs --name \"My System\" && npx @google/design.md lint DESIGN.md",
+  "tokens:lint": "node scripts/design-md-sync.cjs --name \"My System\" && npx @google/design.md lint DESIGN.md",
   "tokens": "npm run tokens:extract && npm run tokens:lint"
 }
 ```

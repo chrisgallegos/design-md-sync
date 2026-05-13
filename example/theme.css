@@ -1,0 +1,59 @@
+/* example/theme.css
+   A minimal CSS custom properties file demonstrating
+   the token patterns css-to-design-md recognizes. */
+
+:root {
+  /* Colors — hex values are extracted automatically */
+  --background: #ffffff;
+  --foreground: #0a1514;
+  --primary: #00875a;
+  --primary-foreground: #ffffff;
+  --secondary: #0077aa;
+  --secondary-foreground: #ffffff;
+  --card: #f2f2f2;
+  --card-foreground: #0a1514;
+  --muted: #e9ecef;
+  --muted-foreground: #1a2524;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+
+  /* Skipped — unsupported color spaces (logged, not silently dropped) */
+  --border: rgba(0, 0, 0, 0.15);
+  --ring: oklch(0.708 0 0);
+
+  /* Typography scale */
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-xl: 1.5rem;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --line-height-sm: 1.25;
+  --line-height-base: 1.5;
+
+  /* Spacing scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+
+  /* Radius */
+  --radius: 0.5rem;
+  --radius-sm: 0.25rem;
+}
+
+/* Dark mode — extracted from .dark selector */
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+  --primary: #00ffa3;
+  --primary-foreground: #000000;
+  --secondary: #00f0ff;
+  --secondary-foreground: #000000;
+  --card: #0a0a0a;
+  --card-foreground: #ffffff;
+  --muted: #1a2524;
+  --muted-foreground: #94a3b8;
+  --destructive: #ff4d6d;
+  --destructive-foreground: #ffffff;
+}
