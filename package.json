@@ -1,0 +1,31 @@
+{
+  "name": "design-md-sync",
+  "version": "1.0.0",
+  "description": "Zero-dependency Node.js script that converts CSS custom properties into a valid DESIGN.md spec for Google's design system linter.",
+  "license": "MIT",
+  "author": "Chris Gallegos <chris@gallegosdesigns.com>",
+  "homepage": "https://vibe.chrisgallegos.com/design-system",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrisgallegos/design-md-sync.git"
+  },
+  "keywords": [
+    "design-tokens",
+    "design-system",
+    "css",
+    "design-md",
+    "wcag",
+    "tailwind"
+  ],
+  "bin": {
+    "design-md-sync": "./design-md-sync.cjs"
+  },
+  "files": [
+    "design-md-sync.cjs",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
